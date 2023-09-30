@@ -1,0 +1,151 @@
+:root {
+  --branco-principal: #ffffff;
+  --cinza-secundario: #c0c0c0;
+  --azul-botao: #167bf7;
+  --cor-de-fundo: #00030c;
+  --fonte-principal: "inter";
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: var(--cor-de-fundo);
+  color: var(--branco-principal);
+  font-family: var(--fonte-principal);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.container__titulo {
+  font-size: 28px;
+}
+
+.principal {
+  background-image: url(./imagens/Background.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  align-items: center;
+  text-align: center;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.container__botao {
+  background-color: var(--azul-botao);
+  border-radius: 5px;
+  padding: 1em;
+  color: var(--branco-principal);
+  text-decoration: none;
+  display: block;
+  margin-bottom: 1em;
+}
+
+.botao__secundario {
+  background-color: transparent;
+  border: solid 2px var(--branco-principal);
+}
+
+.container__aviso {
+  color: var(--cinza-secundarios);
+  font-size: 12px;
+}
+
+.container__imagem {
+  margin: 1em 0 2em 0;
+}
+
+.container__caixa {
+  margin: 0 6em;
+}
+
+.secundario__imagem {
+  width: 80%;
+}
+
+.secundario {
+  align-items: center;
+  margin: 0 10em;
+}
+
+.descricao__titulo {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 0.1em;
+}
+
+.descricao__texto {
+  color: var(--cinza-secundario);
+}
+
+.secundario__botao {
+  display: inline-block;
+  margin-top: 1em;
+}
+
+.imagem__secundario {
+  width: 80%;
+  margin-left: 3em;
+}
+
+.dispositivos__lista {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 5em 0;
+}
+
+.dispositivos {
+  text-align: center;
+}
+
+.dispositivos__titulo {
+  font-size: 48px;
+  font-weight: bold;
+  color: var(--branco-principal);
+}
+
+.lista__item {
+  font-size: 32px;
+  color: var(--branco-principal);
+}
+
+.rodape {
+  text-align: center;
+}
+
+.rodape__logo {
+  margin: 3em 0;
+}
+
+.rodape__lista {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+.lista__link > a {
+  padding-left: 20px;
+  color: var(--branco-principal);
+}
+
+.rodape__texto {
+  color: var(--cinza-secundario);
+  font-size: 14px;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.lista__link a:hover {
+  color: var(--cinza-secundario);
+}
